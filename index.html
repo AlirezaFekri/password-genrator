@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Genrator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="password">
+            <span id="result">
+                Click To genrate for create your password
+            </span>
+            <span id="copy">copy</span>
+            <div class="error">asdasdas</div>
+        </div>
+        <div>
+            <label for="len">Length: </label>
+            <input type="range" name="" min="1" max="64" value="8" step="1" id="len">
+            <span class="length-show">08</span>
+        </div>
+        <div class="options">
+            <div>
+                <div>
+                    <input type="checkbox" name="" id="numeric">
+                    <label for="numeric">Numeric</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="lowercase">
+                    <label for="lowercase">lowecase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="repetition">
+                    <label for="repetition">No repetition</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox" name="" id="uppercase">
+                    <label for="uppercase">UPPERCASE</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="symbol">
+                    <label for="symbol">symbol</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="space">
+                    <label for="space">space</label>
+                </div>
+            </div>
+        </div>
+        <button class="gen-btn">genrate</button>
+        
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
